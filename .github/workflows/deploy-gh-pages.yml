@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Ensure the checkout step keeps the GITHUB_TOKEN credentials
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,3 +40,7 @@ jobs:
           publish_branch: gh-pages
           # Optionally keep the history of the gh-pages branch
           keep_files: false
+          # If your organization or repo blocks the GITHUB_TOKEN from pushing,
+          # create a personal access token (with `repo` scope) and add it as
+          # a secret like `PERSONAL_TOKEN`, then replace `github_token` with:
+          # personal_token: ${{ secrets.PERSONAL_TOKEN }}
