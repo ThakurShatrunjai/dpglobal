@@ -64,7 +64,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex items-center space-x-4">
                 <img 
-                  src="https://picsum.photos/seed/ceo_portrait/100/100" 
+                  src="https://raw.githubusercontent.com/ThakurShatrunjai/dpglobal/main/pages/ho.jpg" 
                   alt="Vijay Shukla" 
                   className="w-16 h-16 rounded-full object-cover border-2 border-slate-200"
                 />
