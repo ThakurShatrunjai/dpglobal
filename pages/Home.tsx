@@ -76,7 +76,7 @@ const Home: React.FC = () => {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://picsum.photos/seed/logistics_warehouse/800/600" 
+                src="https://raw.githubusercontent.com/ThakurShatrunjai/dpglobal/main/pages/ho.jpg" width="1600" height="900" 
                 alt="Modern Warehouse" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
