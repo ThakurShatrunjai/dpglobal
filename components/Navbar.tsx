@@ -62,16 +62,7 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              className={`px-5 py-2.5 rounded-md text-sm font-medium transition-all ${
-                scrolled
-                  ? 'bg-corporate-blue text-white hover:bg-blue-700'
-                  : 'bg-white text-corporate-900 hover:bg-slate-100'
-              }`}
-            >
-              Get a Quote
-            </Link>
+         
           </div>
 
           {/* Mobile Menu Button */}
@@ -103,14 +94,7 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4 pb-2">
-               <Link
-                to="/contact"
-                className="block w-full text-center px-5 py-3 rounded-md text-base font-bold bg-corporate-blue text-white hover:bg-blue-700"
-              >
-                Request a Quote
-              </Link>
-            </div>
+            
           </div>
         </div>
       )}
