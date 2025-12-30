@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   scrolled 
-                    ? isActive(link.path) ? 'text-blue-600 font-bold' : 'text-slate-600 hover:text-blue-600'
+                    ? isActive(link.path) ? 'text-blue-600 font-bold' : 'text-slate-900 hover:text-blue-600'
                     : isActive(link.path) ? 'text-amber-400 font-bold' : 'text-white hover:text-slate-200'
                 }`}
               >
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
                 className={`block px-3 py-4 rounded-md text-base font-medium ${
                   isActive(link.path)
                     ? 'text-corporate-blue bg-blue-50'
-                    : 'text-slate-600 hover:text-corporate-blue hover:bg-slate-50'
+                    : 'text-slate-900 hover:text-corporate-blue hover:bg-slate-50'
                 }`}
               >
                 {link.name}
